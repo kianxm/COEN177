@@ -1,0 +1,13 @@
+Name: Kian Malakooti
+Date: Sept 28, 2022 
+Title: Lab2 – Programming in C and use of Systems Calls 
+Description: Observations
+
+Step 3: Running ./two_process produces a seg fault because it is missing an argument
+
+Step 4:
+1) 500μs - program finishes in less than half a second
+2) 5000μs - program takes much longer to run (not that long but compared to first delay it is 10x slow)
+
+Step 6: Gives a seg fault because it is missing an argument, works if μs argument is given. 
+
