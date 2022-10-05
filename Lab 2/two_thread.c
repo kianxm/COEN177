@@ -13,7 +13,7 @@
 void *thread1(void *n) {
     for(int i = 0; i < 100; i++) {
         printf("\t \t \t Thread 1 %d\n", i);
-        usleep(*((int *) n));
+        usleep(*((int *) n)); //typecast void -> int -> deref
     }
     pthread_exit((void *)n);
 }
@@ -21,7 +21,7 @@ void *thread1(void *n) {
 void *thread2(void *n) {
     for(int j = 0; j < 100; j++) {
         printf("\t \t \t Thread 2 %d\n", j);
-        usleep(*((int *) n));
+        usleep(*((int *) n)); //typecast void -> int -> deref
     }
     pthread_exit((void *)n);
 }
@@ -37,6 +37,6 @@ int main(int argc, char* argv[]) {
     pthread_create(&t2, NULL, thread2, arg);
     pthread_join(t1, (void **)&arg);
     pthread_join(t2, (void **)&arg);
-    free(arg);
+    free(arg); // free memory
     return 0;
 }

@@ -1,4 +1,8 @@
-/*Sample C program for Lab assignment 1*/
+// Name: Kian Malakooti
+// Date: Sept 28, 2022 
+// Title: Lab2 – Programming in C and use of Systems Calls 
+// Description: Step 1: Demonstrates use of parent and child processes
+
 #include <stdio.h>      /* printf, stderr */
 #include <sys/types.h>  /* pid_t */
 #include <unistd.h>     /* fork */
