@@ -1,0 +1,35 @@
+Name: Kian Malakooti
+Date: October 5, 2022 
+Title: Lab3 – Pthreads and inter-process Communication – Pipes
+Description: Observations
+
+Step 6 Output:
+Hello from thread 91172864 with iteration 2
+Hello from thread 91709440 with iteration 5
+Hello from thread 92246016 with iteration 5
+Hello from thread 92782592 with iteration 5
+Hello from thread 93319168 with iteration 5
+Hello from thread 95465472 with iteration 9
+Hello from thread 94392320 with iteration 7
+Hello from thread 94928896 with iteration 8
+Hello from thread 93855744 with iteration 6
+Hello from thread 96002048 with iteration 9
+Thread 0 returned
+Thread 1 returned
+Thread 2 returned
+Thread 3 returned
+Thread 4 returned
+Thread 5 returned
+Thread 6 returned
+Thread 7 returned
+Thread 8 returned
+Thread 9 returned
+Main thread done.
+
+Step 6:
+Threads created: 10
+Values of i passed: 1-10
+Error occurs because type int too small.
+
+Step 7:
+Changing (int) to (long) takes the error away. This might just be a hacky fix but it works.
